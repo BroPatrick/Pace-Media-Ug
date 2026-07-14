@@ -255,3 +255,31 @@ body{
     transform: scale(1.08);
     background: linear-gradient(135deg, #00bfff, #8000ff);
 }
+.explore-latest {
+    text-align: center;
+    padding: 30px;
+}
+
+.explore-latest h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.latest-button {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #8000ff, #00bfff);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.4s;
+}
+
+.latest-button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #00bfff, #8000ff);
+}
