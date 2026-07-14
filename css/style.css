@@ -528,3 +528,25 @@ body{
 .social-icons a:hover {
     color: #ffd700;
 }
+@media screen and (max-width: 768px) {
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
