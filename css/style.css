@@ -518,4 +518,13 @@ body{
 
 .social-icons img:hover {
     transform: scale(1.2);
+}.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
 }
