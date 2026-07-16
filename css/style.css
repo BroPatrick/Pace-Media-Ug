@@ -1806,3 +1806,201 @@ font-size:14px;
 }
 
 }
+/* ===========================
+   LIVE PAGE PREMIUM DESIGN
+=========================== */
+
+.live-page{
+    padding:80px 20px;
+    background:linear-gradient(135deg,#f5f9ff,#f9f2ff);
+}
+
+
+/* Heading */
+
+.live-page h2{
+    text-align:center;
+    width:max-content;
+    max-width:100%;
+    margin:0 auto 25px;
+    padding:14px 45px;
+    background:linear-gradient(90deg,#c00000,#ff3030);
+    color:white;
+    border-radius:8px;
+    font-size:40px;
+    font-weight:800;
+    text-transform:uppercase;
+}
+
+
+/* Intro */
+
+.live-intro{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 45px;
+    color:#555;
+    font-size:18px;
+}
+
+
+/* Live Video Area */
+
+.live-player{
+    position:relative;
+    max-width:1000px;
+    margin:0 auto 50px;
+    border-radius:25px;
+    overflow:hidden;
+    background:#000;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+
+.live-player iframe{
+    width:100%;
+    height:560px;
+    display:block;
+    border:0;
+}
+
+
+/* LIVE Badge */
+
+.live-badge{
+    position:absolute;
+    top:20px;
+    left:20px;
+    background:#c00000;
+    color:white;
+    padding:8px 20px;
+    border-radius:30px;
+    font-weight:800;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    z-index:2;
+}
+
+
+.live-dot{
+    width:10px;
+    height:10px;
+    background:white;
+    border-radius:50%;
+    animation:pulseLive 1.2s infinite;
+}
+
+
+@keyframes pulseLive{
+
+50%{
+    opacity:.3;
+    transform:scale(1.4);
+}
+
+}
+
+
+/* Program Cards */
+
+.live-programs{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+
+.live-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+
+.live-card:hover{
+    transform:translateY(-8px);
+}
+
+
+.live-card h3{
+    color:#c00000;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+
+.live-card p{
+    color:#555;
+    line-height:1.7;
+}
+
+
+/* Schedule */
+
+.live-schedule{
+    margin-top:60px;
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+
+.live-schedule h3{
+    text-align:center;
+    color:#c00000;
+    margin-bottom:25px;
+}
+
+
+.schedule-item{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #eee;
+    padding:15px 0;
+}
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.live-page h2{
+    font-size:28px;
+}
+
+
+.live-player iframe{
+    height:350px;
+}
+
+
+.live-programs{
+    grid-template-columns:1fr;
+}
+
+}
+
+
+@media(max-width:600px){
+
+.live-page{
+    padding:60px 15px;
+}
+
+
+.live-player iframe{
+    height:250px;
+}
+
+
+.schedule-item{
+    flex-direction:column;
+    gap:5px;
+}
+
+}
