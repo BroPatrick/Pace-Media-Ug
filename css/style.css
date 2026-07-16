@@ -684,7 +684,6 @@ section h2::after{
 /* ===========================
    PREMIUM OUR TEAM SECTION
 =========================== */
-
 .team-section{
     position:relative;
     overflow:hidden;
@@ -706,14 +705,14 @@ section h2::after{
 /* Heading */
 
 .team-section h2{
-    display:inline-block;
     background:linear-gradient(90deg,#c00000,#ff3030);
-    color:white;
+    color:#fff;
+    font-size:38px;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
     padding:14px 40px;
     border-radius:10px;
-    font-size:38px;
-    text-transform:uppercase;
-    letter-spacing:2px;
     box-shadow:0 10px 25px rgba(192,0,0,.3);
 }
 
@@ -737,91 +736,51 @@ section h2::after{
     gap:30px;
 }
 
-/* Glass Cards */
+/* Glass Team Cards */
 
 .team-card{
     position:relative;
     overflow:hidden;
 
     background:
-        linear-gradient(rgba(11,87,208,0.85), rgba(11,87,208,0.85)),
-        url("../images/pace media ug logo.png") center/180px no-repeat;
+        linear-gradient(
+            rgba(255,255,255,0.78),
+            rgba(255,255,255,0.78)
+        ),
+        url("../images/pace media ug logo.png") center/140px no-repeat;
 
-    backdrop-filter:blur(12px);
+    backdrop-filter:blur(15px);
+
     border-radius:25px;
     padding:30px 20px;
-    border:1px solid rgba(255,255,255,.7);
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+    border:1px solid rgba(255,255,255,0.8);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.12);
+
     transition:.4s ease;
+
     animation:teamFade .8s ease forwards;
 }
 
-/* Keep content above watermark */
+/* Keep text and images above watermark */
 
-.team-card > img,
+.team-card img,
 .team-card h3,
 .team-card h4,
 .team-card p{
     position:relative;
-    z-index:1;
+    z-index:2;
 }
+
+
+/* Hover */
 
 .team-card:hover{
     transform:translateY(-12px);
-    box-shadow:0 25px 50px rgba(0,0,0,.2);
+    box-shadow:0 25px 50px rgba(0,0,0,.18);
 }
-
-
-/* Profile Images */
-
-.team-card img{
-    width:160px;
-    height:160px;
-    object-fit:cover;
-    border-radius:50%;
-    border:5px solid white;
-    box-shadow:0 8px 25px rgba(0,0,0,.2);
-    margin-bottom:20px;
-}
-
-
-/* Names */
-
-.team-card h3{
-    color:#1d4ed8;
-    font-size:23px;
-    margin-bottom:8px;
-}
-
-
-.team-card h4{
-    color:#c00000;
-    font-size:16px;
-    font-weight:700;
-    margin-bottom:15px;
-}
-
-
-.team-card p{
-    color:#444;
-    font-size:15px;
-    line-height:1.7;
-}
-
-
-/* Bottom Accent */
-
-.team-card::after{
-    content:"";
-    display:block;
-    width:70px;
-    height:4px;
-    margin:20px auto 0;
-    background:linear-gradient(90deg,#1d4ed8,#c00000);
-    border-radius:10px;
-}
-
-
 /* Entry Animation */
 
 @keyframes teamFade{
@@ -892,68 +851,65 @@ section h2::after{
     width:130px;
     height:130px;
 }
-
+/* Team Member Name */
 
 .team-card h3{
-    font-size:21px;
+    color:#0b2d5c;
+    font-size:23px;
+    font-weight:800;
+    margin-bottom:8px;
+    letter-spacing:.5px;
+}
+/* Team Member Name */
+.team-card h3{
+    color:#0b2d5c;
+    font-size:23px;
+    font-weight:800;
+    margin-bottom:8px;
+    letter-spacing:.5px;
 }
 
-/* ===========================
-   MOBILE RESPONSIVE
-=========================== */
+/* Position / Role */
+.team-card h4{
+    color:#c00000;
+    font-size:16px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:15px;
+}
 
-@media (max-width:768px){
+/* Description */
+.team-card p{
+    color:#475569;
+    font-size:15px;
+    line-height:1.8;
+}
 
-    .team-section{
-        padding:60px 15px;
-    }
+/* Team Photo */
+.team-card img{
+    width:150px;
+    height:190px;
+    object-fit:cover;
+    border-radius:18px;
+    border:4px solid #fff;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    margin-bottom:20px;
+}
 
-    .team-section h2{
-        font-size:28px;
-        padding:10px 25px;
-        letter-spacing:1px;
-    }
+}
 
-    .team-section h2::after{
-        width:80px;
-    }
 
-    .team-intro{
-        font-size:16px;
-        margin-bottom:35px;
-    }
+    /* Description */
 
-    .team-container{
-        grid-template-columns:1fr;
-        gap:20px;
-    }
+.team-card p{
+    color:#475569;
+    font-size:15px;
+    line-height:1.8;
+}
 
-    .team-card{
-        max-width:350px;
-        width:100%;
-        margin:0 auto;
-        padding:25px 18px;
-    }
-
-    .team-card img{
-        width:150px;
-        height:190px;
-        border-radius:18px;
-    }
-
-    .team-card h3{
-        font-size:21px;
-    }
-
-    .team-card h4{
-        font-size:16px;
-    }
-
-    .team-card p{
-        font-size:14px;
-  
-    }
-}.social-icons {
+}
+.social-icons {
     display: flex;
     gap: 12px;
     align-items: center;
