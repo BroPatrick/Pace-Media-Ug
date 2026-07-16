@@ -1203,3 +1203,606 @@ font-size:14px;
   }
 
 }
+  /* ===========================
+   ABOUT PAGE PREMIUM DESIGN
+=========================== */
+
+.about-page{
+    padding:80px 20px;
+    background:linear-gradient(135deg,#f5f9ff,#f9f2ff);
+}
+
+
+/* About Heading */
+
+.about-page h2{
+    text-align:center;
+    display:block;
+    width:max-content;
+    max-width:100%;
+    margin:0 auto 25px;
+    padding:14px 45px;
+    background:linear-gradient(90deg,#c00000,#ff3030);
+    color:white;
+    border-radius:8px;
+    font-size:40px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+
+/* Intro */
+
+.about-intro{
+    max-width:850px;
+    margin:0 auto 50px;
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+
+/* About Content Layout */
+
+.about-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+
+/* Image */
+
+.about-image img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+
+/* Text Box */
+
+.about-text{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+
+.about-text h3{
+    color:#c00000;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+
+.about-text p{
+    color:#444;
+    line-height:1.8;
+    font-size:16px;
+}
+
+
+/* Mission Vision Values */
+
+.about-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:60px;
+}
+
+
+.about-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s ease;
+}
+
+
+.about-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.about-card h3{
+    color:#c00000;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+
+.about-card p{
+    color:#555;
+    line-height:1.7;
+}
+
+
+/* Statistics */
+
+.about-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-top:60px;
+}
+
+
+.stat-box{
+    background:linear-gradient(135deg,#111827,#374151);
+    color:white;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+}
+
+
+.stat-box h3{
+    font-size:35px;
+    margin-bottom:8px;
+}
+
+
+.stat-box p{
+    font-size:15px;
+}
+
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.about-content{
+    grid-template-columns:1fr;
+}
+
+
+.about-cards{
+    grid-template-columns:1fr;
+}
+
+
+.about-stats{
+    grid-template-columns:repeat(2,1fr);
+}
+
+
+.about-page h2{
+    font-size:28px;
+}
+
+}
+
+
+@media(max-width:600px){
+
+.about-stats{
+    grid-template-columns:1fr;
+}
+
+.about-text{
+    padding:25px;
+}
+
+}
+  /* ===========================
+   CONTACT PAGE PREMIUM DESIGN
+=========================== */
+
+.contact-page{
+    padding:80px 20px;
+    background:linear-gradient(135deg,#f5f9ff,#faf3ff);
+}
+
+
+/* Page Heading */
+
+.contact-page h2{
+    text-align:center;
+    width:max-content;
+    max-width:100%;
+    margin:0 auto 25px;
+    padding:14px 45px;
+    background:linear-gradient(90deg,#c00000,#ff3030);
+    color:white;
+    border-radius:8px;
+    font-size:40px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+
+/* Intro Text */
+
+.contact-intro{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 50px;
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+
+/* Contact Layout */
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+
+/* Contact Information */
+
+.contact-info{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+
+.contact-info h3{
+    color:#c00000;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+
+.contact-info p{
+    color:#555;
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+
+.contact-info i{
+    color:#c00000;
+    margin-right:10px;
+}
+
+
+
+/* Contact Form */
+
+.contact-form{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+
+.contact-form h3{
+    color:#c00000;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#c00000;
+}
+
+
+.contact-form textarea{
+    height:150px;
+    resize:none;
+}
+
+
+/* Button */
+
+.contact-form button{
+    background:linear-gradient(90deg,#c00000,#ff3030);
+    color:white;
+    border:none;
+    padding:14px 35px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+
+.contact-form button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+
+
+/* Social Media Box */
+
+.contact-social{
+    margin-top:40px;
+    text-align:center;
+}
+
+
+.contact-social a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:45px;
+    height:45px;
+    margin:5px;
+    background:#111827;
+    color:white;
+    border-radius:50%;
+    font-size:20px;
+    transition:.3s;
+}
+
+
+.contact-social a:hover{
+    background:#c00000;
+    transform:translateY(-5px);
+}
+
+
+
+/* Mobile */
+
+@media(max-width:850px){
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+
+.contact-page h2{
+    font-size:28px;
+    padding:12px 25px;
+}
+
+}
+/* ===========================
+   NEWS PAGE PREMIUM DESIGN
+=========================== */
+
+.news-page{
+    padding:80px 20px;
+    background:linear-gradient(135deg,#f5f9ff,#f9f2ff);
+}
+
+
+/* Page Heading */
+
+.news-page h2{
+    text-align:center;
+    width:max-content;
+    max-width:100%;
+    margin:0 auto 25px;
+    padding:14px 45px;
+    background:linear-gradient(90deg,#c00000,#ff3030);
+    color:#fff;
+    border-radius:8px;
+    font-size:40px;
+    font-weight:800;
+    text-transform:uppercase;
+}
+
+
+/* Intro */
+
+.news-intro{
+    max-width:800px;
+    margin:0 auto 50px;
+    text-align:center;
+    color:#555;
+    font-size:18px;
+    line-height:1.7;
+}
+
+
+/* Featured News */
+
+.featured-news{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    margin-bottom:60px;
+}
+
+
+.featured-news-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:25px;
+    height:450px;
+}
+
+
+.featured-news-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+.featured-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:35px;
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+    color:white;
+}
+
+
+.featured-overlay h3{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+
+/* News Grid */
+
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+
+.news-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s ease;
+}
+
+
+.news-card:hover{
+    transform:translateY(-8px);
+}
+
+
+.news-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+
+.news-card-content{
+    padding:25px;
+}
+
+
+.news-card h3{
+    font-size:22px;
+    color:#222;
+    margin-bottom:12px;
+}
+
+
+.news-card p{
+    color:#666;
+    line-height:1.6;
+}
+
+
+.news-meta{
+    color:#c00000;
+    font-size:14px;
+    font-weight:600;
+}
+
+
+/* Read More Button */
+
+.read-more{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 25px;
+    background:#c00000;
+    color:white;
+    border-radius:25px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+
+.read-more:hover{
+    background:#ff3030;
+}
+
+
+/* Categories */
+
+.news-categories{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+
+.news-categories a{
+    padding:10px 25px;
+    background:white;
+    border-radius:25px;
+    color:#c00000;
+    font-weight:700;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+.featured-news{
+    grid-template-columns:1fr;
+}
+
+
+.news-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:700px){
+
+.news-page{
+    padding:60px 15px;
+}
+
+
+.news-page h2{
+    font-size:28px;
+}
+
+
+.news-grid{
+    grid-template-columns:1fr;
+}
+
+
+.featured-news-card{
+    height:350px;
+}
+
+
+.featured-overlay h3{
+    font-size:24px;
+}
+
+}
