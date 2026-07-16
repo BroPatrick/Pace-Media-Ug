@@ -908,9 +908,18 @@ section h2::after{
     text-align:center;
 }
 
-.video-wrapper{
-    max-width:1000px;
+/* YouTube + TikTok layout */
+.media-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    max-width:1100px;
     margin:40px auto 0;
+}
+
+
+/* YouTube box */
+.video-wrapper{
     border-radius:22px;
     overflow:hidden;
     box-shadow:0 18px 50px rgba(0,0,0,.25);
@@ -924,13 +933,31 @@ section h2::after{
     display:block;
 }
 
+
+/* TikTok box */
+.tiktok-wrapper{
+    display:flex;
+    justify-content:center;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 18px 50px rgba(0,0,0,.25);
+    background:#fff;
+}
+
+
+/* Mobile */
 @media(max-width:768px){
 
     .video-section{
         padding:60px 15px;
     }
 
-    .video-wrapper{
+    .media-grid{
+        grid-template-columns:1fr;
+    }
+
+    .video-wrapper,
+    .tiktok-wrapper{
         border-radius:16px;
     }
 
