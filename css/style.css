@@ -730,6 +730,7 @@ section h2::after{
 
 .team-container{
     max-width:1200px;
+    width:100%;
     margin:auto;
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -797,6 +798,47 @@ section h2::after{
 
 }
 
+/* Team Member Name */
+
+.team-card h3{
+    color:#0b2d5c;
+    font-size:23px;
+    font-weight:800;
+    margin-bottom:8px;
+    letter-spacing:.5px;
+}
+
+/* Position / Role */
+
+.team-card h4{
+    color:#c00000;
+    font-size:16px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:15px;
+}
+
+/* Description */
+
+.team-card p{
+    color:#475569;
+    font-size:15px;
+    line-height:1.8;
+}
+
+/* Team Photo */
+
+.team-card img{
+    width:150px;
+    height:190px;
+    object-fit:cover;
+    border-radius:18px;
+    border:4px solid #fff;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    margin-bottom:20px;
+}
+
 
 /* Tablet */
 
@@ -817,126 +859,32 @@ section h2::after{
     padding:60px 15px;
 }
 
-
-.team-section::before{
-    width:350px;
-    height:350px;
-}
-
-
 .team-section h2{
     font-size:28px;
     padding:12px 25px;
 }
 
-
 .team-intro{
     font-size:16px;
 }
-
 
 .team-container{
     grid-template-columns:1fr;
     gap:25px;
 }
 
-
 .team-card{
     max-width:350px;
     margin:auto;
 }
 
-
 .team-card img{
-    width:130px;
-    height:130px;
-}
-/* Team Member Name */
-
-.team-card h3{
-    color:#0b2d5c;
-    font-size:23px;
-    font-weight:800;
-    margin-bottom:8px;
-    letter-spacing:.5px;
-}
-/* Team Member Name */
-.team-card h3{
-    color:#0b2d5c;
-    font-size:23px;
-    font-weight:800;
-    margin-bottom:8px;
-    letter-spacing:.5px;
-}
-
-/* Position / Role */
-.team-card h4{
-    color:#c00000;
-    font-size:16px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin-bottom:15px;
-}
-
-/* Description */
-.team-card p{
-    color:#475569;
-    font-size:15px;
-    line-height:1.8;
-}
-
-/* Team Photo */
-.team-card img{
-    width:150px;
-    height:190px;
-    object-fit:cover;
-    border-radius:18px;
-    border:4px solid #fff;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-    margin-bottom:20px;
+    width:120px;
+    height:120px;
 }
 
 }
 
-
-    /* Description */
-
-.team-card p{
-    color:#475569;
-    font-size:15px;
-    line-height:1.8;
-}
-
-}
-.social-icons {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-
-}
-@media screen and (max-width: 768px) {
-    .team-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .team-card {
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-    }
-
-    .team-card img {
-        width: 120px;
-        height: 120px;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-}
 /* =====================================
    PREMIUM LATEST VIDEOS
 ===================================== */
