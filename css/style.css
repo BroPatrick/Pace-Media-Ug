@@ -741,7 +741,7 @@ section h2::after{
     overflow:hidden;
 
     background:
-        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        linear-gradient(rgba(11,87,208,0.85), rgba(11,87,208,0.85)),
         url("../images/pace media ug logo.png") center/180px no-repeat;
 
     backdrop-filter:blur(12px);
