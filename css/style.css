@@ -69,7 +69,11 @@ body{
 .live-dot{animation:livePulse 1.6s infinite ease-in-out}
 
 @media (max-width:720px){
-  .live-pill{display:none}
+  .live-pill{
+    display:inline-flex;
+    font-size:0.75rem;
+    padding:6px 10px;
+  }
 }
 
 .main-nav{background:rgba(255,255,255,0.04);backdrop-filter:blur(10px);border-radius:18px;margin-top:8px}
@@ -1004,4 +1008,22 @@ section h2::after{
 .social-icons a:hover {
     color: #ffd700;
 }
+}
+@media (max-width:720px){
+
+  .header-inner{
+    flex-wrap:wrap;
+  }
+
+  .header-actions{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .live-pill{
+    display:inline-flex;
+    margin-left:0;
+  }
+
 }
