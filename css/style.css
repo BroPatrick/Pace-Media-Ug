@@ -690,40 +690,15 @@ section h2::after{
     padding:90px 20px;
     background:linear-gradient(135deg,#eef5ff,#ffffff,#f5f0ff);
     text-align:center;
+
 }
 
-/* Faint Pace Media Logo Watermark */
-
-.team-section::before{
-    content:"";
-    position:absolute;
-    top:50%;
-    left:50%;
-    width:600px;
-    height:600px;
-    transform:translate(-50%,-50%);
-    background:url("../images/pace media ug logo.png") center/contain no-repeat;
-    opacity:.06;
-    animation:floatingLogo 18s ease-in-out infinite;
-    z-index:0;
-}
-
-@keyframes floatingLogo{
-    0%,100%{
         transform:translate(-50%,-50%);
     }
 
     50%{
         transform:translate(-50%,-54%);
     }
-}
-
-
-.team-section > *{
-    position:relative;
-    z-index:2;
-}
-
 
 /* Heading */
 
@@ -763,16 +738,43 @@ section h2::after{
 /* Glass Cards */
 
 .team-card{
-    background:rgba(255,255,255,.55);
+    position:relative;
+    overflow:hidden;
+    background:rgba(255,255,255,.75);
     backdrop-filter:blur(12px);
     border-radius:25px;
     padding:30px 20px;
     border:1px solid rgba(255,255,255,.7);
     box-shadow:0 15px 35px rgba(0,0,0,.12);
     transition:.4s ease;
-    animation:teamFade .8s ease forwards;
+    animation:teamFade .8s ease forwards;}
+
+  /* Logo watermark inside each team card */
+
+.card-watermark{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:.06;
+    z-index:0;
+    pointer-events:none;
 }
 
+.card-watermark img{
+    width:180px;
+}
+
+
+/* Keep content above watermark */
+
+.team-card > img,
+.team-card h3,
+.team-card h4,
+.team-card p{
+    position:relative;
+    z-index:1;
+}
 
 .team-card:hover{
     transform:translateY(-12px);
