@@ -652,7 +652,7 @@ section h2::after{
 @keyframes fadeUp{
     to{
         opacity:1;
-        transform:translateY(0);
+        transform:translateY(0);}
 }
 
 /* Responsive */
@@ -879,8 +879,19 @@ section h2::after{
 .team-card img{
     width:120px;
     height:120px;
+  .team-container{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
 }
 
+.team-card{
+    width:100%;
+    max-width:350px;
+    margin:auto;
+}
+  
 }
 
 /* =====================================
