@@ -2004,3 +2004,26 @@ font-size:14px;
 }
 
 }
+/* ===========================
+   SERVICE BACKGROUND ANIMATION
+=========================== */
+
+.service-card{
+    background-size: cover;
+    background-position: center;
+    animation: serviceZoom 8s ease-in-out infinite alternate;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover{
+    transform: translateY(-10px);
+}
+
+@keyframes serviceZoom{
+    from{
+        background-size: 100%;
+    }
+    to{
+        background-size: 115%;
+    }
+}
