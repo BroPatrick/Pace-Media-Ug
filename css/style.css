@@ -666,7 +666,7 @@ section h2::after{
 @media(max-width:768px){
     .services-container{
         grid-template-columns:1fr;
-        gap:22px;
+        gap:30px;
     }
 
     .service-card{
