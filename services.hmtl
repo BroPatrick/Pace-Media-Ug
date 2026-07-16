@@ -1,1 +1,89 @@
+<section id="services" class="services-section">
 
+    <div class="container">
+
+        <h2>Our Services</h2>
+
+        <p class="services-intro">
+            We provide professional media and digital solutions.
+        </p>
+
+
+    <div class="service-card" style="background-image:url('images/photography.jpg');">
+        <div class="service-content">
+            <h3>📸 Photography</h3>
+            <p>Professional photography for events, corporate functions, weddings, branding, products, and promotional campaigns.</p>
+        </div>
+    </div>
+
+    <div class="service-card" style="background-image:url('images/video-production.jpg');">
+        <div class="service-content">
+            <h3>🎥 Video Production</h3>
+            <p>High-quality video production, documentaries, commercials, music videos, interviews, and promotional content.</p>
+        </div>
+    </div>
+
+    <div class="service-card" style="background-image:url('images/news.jpg');">
+        <div class="service-content">
+            <h3>📰 News Coverage</h3>
+            <p>Accurate and timely coverage of breaking news, community stories, business, politics, sports, and entertainment.</p>
+        </div>
+    </div>
+
+    <div class="service-card" style="background-image:url('images/livestream.jpg');">
+        <div class="service-content">
+            <h3>📺 Live Streaming</h3>
+            <p>Professional multi-camera live streaming for conferences, church services, sports, concerts, and special events.</p>
+        </div>
+    </div>
+
+    <div class="service-card" style="background-image:url('images/design.jpg');">
+        <div class="service-content">
+            <h3>🎨 Graphic Design</h3>
+            <p>Creative logo design, social media graphics, posters, flyers, banners, brochures, and complete brand identity solutions.</p>
+        </div>
+    </div>
+
+    <div class="service-card" style="background-image:url('images/printing.jpg');">
+        <div class="service-content">
+            <h3>🖨️ Printing & Branding</h3>
+            <p>Quality printing, T-shirt branding, mugs, banners, business cards, stickers, promotional merchandise, and corporate branding.</p>
+        </div>
+    </div>
+
+    <div class="service-card" style="background-image:url('images/podcast.jpg');">
+        <div class="service-content">
+            <h3>🎙️ Podcasts</h3>
+            <p>Professional podcast recording and production for interviews, business, entertainment, education, faith, and storytelling.</p>
+        </div>
+    </div>
+
+    <div class="service-card" style="background-image:url('images/digital-marketing.jpg');">
+        <div class="service-content">
+            <h3>📢 Digital Marketing</h3>
+            <p>Social media management, content creation, online advertising, SEO, and digital campaigns that grow your audience.</p>
+        </div>
+    </div>
+
+<div class="service-card" style="background-image:url('images/social-media.jpg');">
+    <div class="service-content">
+        <h3>📱 Social Media Management</h3>
+        <p>We create, schedule, publish, and manage content across Facebook, TikTok, Instagram, X, YouTube, LinkedIn, and other platforms. We help brands grow their online presence, engage audiences, and build strong digital communities.</p>
+    </div>
+</div>
+
+<div class="service-card" style="background-image:url('images/advertising.jpg');">
+    <div class="service-content">
+        <h3>📢 Advertising</h3>
+        <p>Promote your business through creative advertising campaigns across television, radio, social media, websites, and digital platforms. We design impactful adverts that increase visibility and drive results.</p>
+    </div>
+</div>         
+    
+        <div class="service-card" style="background-image:url('images/media-consultancy.jpg');">
+        <div class="service-content">
+            <h3>📡 Media Consultancy</h3>
+            <p>Expert advice on media strategy, communication, broadcasting, digital transformation, and brand development.</p>
+        </div>
+    </div>
+</div>
+</section>
