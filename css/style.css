@@ -659,18 +659,24 @@ section h2::after{
         transform:translateY(0);}
 }
 
-/* Responsive */
+/* Services Responsive */
+
 @media(max-width:1024px){
+
     .services-container{
         grid-template-columns:repeat(2,1fr);
     }
+
 }
 
+
 @media(max-width:768px){
+
     .services-container{
         grid-template-columns:1fr;
-        row-gap:50px;
+        row-gap:40px;
     }
+
     .service-card{
         height:260px;
     }
@@ -682,9 +688,7 @@ section h2::after{
     .service-content p{
         font-size:14px;
     }
-  .services-container{
-    row-gap:40px;
-}
+
 }
 
 /* ===========================
