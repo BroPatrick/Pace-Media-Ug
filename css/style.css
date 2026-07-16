@@ -841,35 +841,13 @@ section h2::after{
 
     .team-card p{
         font-size:14px;
-    }
-}
-}
-
-
+  
     }
 }.social-icons {
     display: flex;
     gap: 12px;
     align-items: center;
-}
 
-.social-icons img {
-    width: 28px;
-    height: 28px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-    transform: scale(1.2);
-}.social-icons a {
-    color: white;
-    font-size: 24px;
-    margin-left: 15px;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    color: #ffd700;
 }
 @media screen and (max-width: 768px) {
     .team-container {
@@ -985,4 +963,21 @@ section h2::after{
         font-size:16px;
     }
 
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
 }
