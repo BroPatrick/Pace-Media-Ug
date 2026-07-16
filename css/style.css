@@ -666,9 +666,8 @@ section h2::after{
 @media(max-width:768px){
     .services-container{
         grid-template-columns:1fr;
-        gap:30px;
+        row-gap:50px;
     }
-
     .service-card{
         height:260px;
     }
@@ -680,7 +679,11 @@ section h2::after{
     .service-content p{
         font-size:14px;
     }
+  .services-container{
+    row-gap:40px;
 }
+}
+
 /* ===========================
    PREMIUM OUR TEAM SECTION
 =========================== */
