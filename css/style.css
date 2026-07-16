@@ -841,7 +841,6 @@ section h2::after{
     margin-bottom:20px;
 }
 
-
 /* Tablet */
 
 @media(max-width:1024px){
@@ -849,9 +848,6 @@ section h2::after{
 .team-container{
     grid-template-columns:repeat(2,1fr);
 }
-
-}
-
 
 /* Mobile */
 
