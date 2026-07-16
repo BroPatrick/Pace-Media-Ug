@@ -844,9 +844,10 @@ section h2::after{
 /* Tablet */
 
 @media(max-width:1024px){
-
+  
 .team-container{
     grid-template-columns:repeat(2,1fr);
+}
 }
 
 /* Mobile */
