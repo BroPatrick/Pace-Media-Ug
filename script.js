@@ -64,7 +64,95 @@
       showSlide(current);
     }, 4500);
 
-    const sliderEl = document.querySelector('.featured-slider');
+    const sliderEl = d/* =================================
+   PACE MEDIA UG NEWS MANAGEMENT
+================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const cards = document.querySelectorAll(".news-card");
+    const filters = document.querySelectorAll(".news-filter");
+
+    // Automatically create article previews
+    cards.forEach(card => {
+
+        const body = card.querySelector(".card-body");
+        const article = body.querySelector("p:not(.muted)");
+
+        if (!article) return;
+
+        // Preserve the complete original article
+        const fullArticle = article.cloneNode(true);
+
+        const originalText = article.textContent.trim();
+
+        // Create a short highlight without deleting original content
+        const words = originalText.split(/\s+/);
+        const highlight = words.slice(0, 35).join(" ");
+
+        article.textContent =
+            highlight + (words.length > 35 ? "..." : "");
+
+        article.classList.add("article-excerpt");
+
+        // Create expandable full article
+        const details = document.createElement("details");
+        details.className = "article-details";
+
+        const summary = document.createElement("summary");
+        summary.innerHTML = 'Read More <span>＋</span>';
+
+        const fullContent = document.createElement("div");
+        fullContent.className = "full-article";
+
+        fullContent.appendChild(fullArticle);
+
+        details.appendChild(summary);
+        details.appendChild(fullContent);
+
+        // Insert after the highlight
+        article.after(details);
+
+    });
+
+
+    // News category filtering
+    filters.forEach(button => {
+
+        button.addEventListener("click", function () {
+
+            const category = this.dataset.filter;
+
+            filters.forEach(filter => {
+                filter.classList.remove("active");
+            });
+
+            this.classList.add("active");
+
+            let visible = 0;
+
+            cards.forEach(card => {
+
+                const matches =
+                    category === "all" ||
+                    card.dataset.category === category;
+
+                card.hidden = !matches;
+
+                if (matches) visible++;
+
+            });
+
+            const emptyMessage =
+                document.getElementById("noNewsMessage");
+
+            if (emptyMessage) {
+                emptyMessage.hidden = visible !== 0;
+            }
+
+        });
+
+});ocument.querySelector('.featured-slider');
     sliderEl.addEventListener('mouseenter', () => clearInterval(sliderInterval));
     sliderEl.addEventListener('mouseleave', () => {
       sliderInterval = setInterval(() => {
