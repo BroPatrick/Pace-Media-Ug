@@ -213,6 +213,10 @@ body{
 
 .news-card img{
     height:220px;
+}
+
+}
+
 /* NEWS CATEGORY FILTERS */
 
 .news-filters {
@@ -641,7 +645,6 @@ section h2::after{
 .latest-button:hover {
     transform: scale(1.08);
     background: linear-gradient(135deg, #00bfff, #8000ff);
-}
 }
 /* =====================================
    PREMIUM SERVICES PAGE
@@ -1110,13 +1113,12 @@ font-size:14px;
 
 .team-card{
     max-width:350px;
-    margin:auto;
-}
-
 .team-card img{
     width:120px;
     height:120px;
-  .team-container{
+}
+
+.team-container{
     width:100%;
     display:grid;
     grid-template-columns:1fr;
@@ -1128,7 +1130,6 @@ font-size:14px;
     max-width:350px;
     margin:auto;
 }
-  
 }
 
 /* =====================================
