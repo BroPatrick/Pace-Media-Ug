@@ -353,8 +353,18 @@ Contact
     
 <section class="container news-section">
             <h2>Latest News</h2>
-            <div class="news-grid">
-               <article class="news-card">
+<div class="news-filters">
+    <button class="news-filter active" data-filter="all">All News</button>
+    <button class="news-filter" data-filter="uganda">Uganda</button>
+    <button class="news-filter" data-filter="politics">Politics</button>
+    <button class="news-filter" data-filter="business">Business</button>
+    <button class="news-filter" data-filter="africa">Africa</button>
+    <button class="news-filter" data-filter="entertainment">Entertainment</button>
+    <button class="news-filter" data-filter="sports">Sports</button>
+    <button class="news-filter" data-filter="world">World News</button>
+</div>
+      <div class="news-grid">
+               <article class="news-card" data-category="politics">
                     <img src="images/newsA1.jpg" alt="Special reports">
                     <div class="card-body">
                         <h3>Museveni Announces Major Public Service Changes</h3>
@@ -370,7 +380,7 @@ Question: Will these changes improve accountability and service delivery in gove
                     </div>
                 </article>
                 
-                <article class="news-card">
+                <article class="news-card" data-category="business">
                     <img src="images/newsA2.jpg" alt="Special reports">
                     <div class="card-body">
                         <h3>Bank of Uganda Maintains Lending Rate at 12%</h3>
@@ -388,7 +398,7 @@ Borrowing costs may remain high, potentially affecting businesses, investors and
                     </div>
                 </article>
                 
-               <article class="news-card">
+               <article class="news-card" data-category="uganda">
                     <img src="images/newsA3.jpg" alt="Top Stories">
                     <div class="card-body">
                         <h3>MPs Raise Alarm Over Impassable Roads</h3>
@@ -404,7 +414,7 @@ Residents are looking to government for lasting solutions rather than temporary 
                     </div>
                 </article>
 
-              <article class="news-card">
+              <article class="news-card" data-category="africa">
                     <img src="images/newsA4.jpeg" alt="Poltics">
                     <div class="card-body">
                         <h3>Uganda Begins Withdrawing Troops from Somalia</h3>
@@ -420,7 +430,7 @@ The development raises questions about the future of Somalia's security arrangem
                     </div>
                 </article>
   
-                <article class="news-card">
+                <article class="news-card" data-category="politics">
                     <img src="images/newsA5.jpeg" alt="Politics">
                     <div class="card-body">
                         <h3>Opposition Party Sets Conditions for National Dialogue</h3>
@@ -436,7 +446,7 @@ Can Uganda achieve meaningful national dialogue amid continuing political disagr
                     </div>
                 </article>
   
-               <article class="news-card">
+               <article class="news-card" data-category="africa">
                     <img src="images/newsA6.jpeg" alt="Africa">
                     <div class="card-body">
                         <h3>Humanitarian Crisis Deepens in the Region</h3>
@@ -452,7 +462,7 @@ The situation highlights the growing need for regional cooperation and urgent hu
                     </div>
                 </article>
  
-             <article class="news-card">
+             <article class="news-card" data-category="entertainment">
                     <img src="images/newsA7.jpeg" alt="Entertainment">
                     <div class="card-body">
                         <h3>Sir Mesach Semakula’s 50 Years of Greatness Concert: Triumph Amidst Torrential Rain</h3>
@@ -481,7 +491,7 @@ Unfazed by the Kampala storm, Semakula immediately took the celebration on the r
                     </div>
                 </article>
    
-                <article class="news-card">
+                <article class="news-card" data-category="entertainment">
                     <img src="images/newsA8.jpeg" alt="Entertainment">
                     <div class="card-body">
                         <h3>Levixone Lights Up Kampala Serena Hotel</h3>
@@ -495,7 +505,7 @@ Levixone continues to strengthen his position among Uganda's leading gospel ente
                     </div>
                 </article>
 
-               <article class="news-card">
+               <article class="news-card" data-category="entertainment">
                     <img src="images/newsA9.jpeg" alt="Entertainment">
                     <div class="card-body">
                         <h3>Joshua Baraka Lands Major International Brand Partnership</h3>
@@ -509,7 +519,7 @@ The development highlights the growing international recognition of Uganda's mus
                     </div>
                 </article>
  
-                <article class="news-card">
+                <article class="news-card" data-category="entertainment">
                     <img src="images/newsA10.jpeg" alt="Entertainment">
                     <div class="card-body">
                         <h3>15th HiPipo Music Awards Shine at Kampala Serena Hotel</h3>
@@ -542,7 +552,7 @@ Joshua Baraka emerged as the biggest winner of the night, repeating his 2025 dom
                     </div>
                 </article>
 
-                <article class="news-card">
+                <article class="news-card" data-category="entertainment">
                     <img src="images/news11.jpeg" alt="Entertainment">
                     <div class="card-body">
                         <h3>Kasuku and Zubedah Take Their Podcasts to Television</h3>
@@ -556,7 +566,7 @@ Could this be the beginning of a new era for Uganda's podcast industry?</p>
                     </div>
                 </article>
 
-                <article class="news-card">
+                <article class="news-card" data-category="sports">
                     <img src="images/newsA12.jpg" alt="Sports">
                     <div class="card-body">
                         <h3>Uganda Cranes Held to a 1–1 Draw by Botswana</h3>
